@@ -1,0 +1,38 @@
+body{
+  background-color: blue;
+  color:white;
+}
+
+input{
+  margin-top: 6px;
+}
+
+ #TipoPersona{
+	width:190px;
+	position:relative;
+	top:20px;
+}
+
+#Domicilio{
+  width:600px;
+	position:relative;
+	top:20px;
+}
+
+#DatosBancarios{
+  width:600px;
+	position:relative;
+	top:30px;
+}
+
+#Solitarios{
+  margin-top: 50px;
+}
+
+#SecorEconomico{
+  width: 1100px;
+}
+
+#TipoEmpresa{
+  width: 600px;
+}
