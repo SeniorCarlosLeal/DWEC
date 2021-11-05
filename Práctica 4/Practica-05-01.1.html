@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="author" content="Félix Ángel Muñoz Bayón" />
+  <meta charset="utf-8" />
+  <title>Práctica ExpRegulares </title>
+  <link href="Css/estilos.css" rel="stylesheet" type="text/css" />
+  <script src="Script/Practica-05-01.1.js"type="text/javascript"></script>
+  <style type="text/css">
+
+  </style>
+  <script type="text/javascript">
+
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Formulario de recogida de datos</h1>
+  </header>
+  <nav>
+
+  </nav>
+  <main>
+    <section>
+      <article>
+        <form name="primero">
+          <label for="nif">Razón Social/Apellidos y Nombre</label>
+          <input type="text" name="ApellidosYNombre" /> <br />
+
+          <label for="nif">Código de la Empresa</label>
+          <input type="text" name="CodigoEmpresa" /> <br />
+
+          <label for="nif">Cif/Nif de la empresa</label>
+          <input type="text" name="Documento" /> <br />
+
+          <div>
+            <fieldset id="TipoPersona">
+              <legend>Tipo de Persona</legend>
+              <input type="radio" value="juridica" name="provin"/> Jurídica
+              <input type="radio" value="fisica" name="provin"/> Física <br>
+            </fieldset>
+          </div><br>
+
+          <div>
+            <fieldset id="Domicilio">
+              <legend>Domicilio Social/Particular</legend>
+              <label for="direccion">Dirección</label>
+              <input type="text" name="Direccion" />
+
+              <label for="telefono">Telefóno</label>
+              <input type="text" name="Telefono" /><br>
+
+              <label for="localidad">Localidad</label>
+              <input type="text" name="Localidad" />
+
+              <label for="nif">Código Postal</label>
+              <input type="text" name="CodigoPostal" /><br>
+
+              <label for="nif">Provincia</label>
+              <input type="text" name="provincia" readonly />
+            </fieldset>
+          </div>
+
+          <div>
+            <fieldset id="DatosBancarios">
+              <legend>Datos Bancarios</legend>
+              <label for="nif">Código del Banco</label>
+              <input type="text" name="CodigoBanco" /><br>
+
+              <label for="nif">Código oficina</label>
+              <input type="text" name="CodigoOficina" /><br>
+
+              <label for="nif">Codigo Control</label>
+              <input type="text" name="CodigoControl" /><br>
+
+              <label for="nif">Número de Cuenta</label>
+              <input type="text" name="NumCuenta" /><br>
+
+              <label for="nif">IBAN</label>
+              <input type="text" name="IBAN" />
+            </fieldset>
+          </div>
+
+          <div id="Solitarios">
+            <label for="nif">Fecha Constitución de la Empresa</label>
+            <input type="text" name="FechaEmpresa" /><br>
+
+            <label for="nif">Número de Trabajadores de la Empresa</label>
+            <input type="text" name="NumTrabajadores" /><br>
+
+            <label for="nif">Número de fábricas de la Empresa</label>
+            <input type="text" name="Numfabricas" /><br>
+
+            <p>Comunidades en las que hay fábricas:
+              <select name="menu" size="5" multiple>
+                <option value="1">Andalucía</option>
+                <option value="2">Aragón</option>
+                <option value="3">Asturias</option>
+                <option value="4">Baleares</option>
+                <option value="5">Canarias</option>
+                <option value="6">Cantabria</option>
+                <option value="7">Castilla La Mancha</option>
+                <option value="8">Castilla y León</option>
+                <option value="9">Cataluña</option>
+                <option value="10">Comunidad Valenciana</option>
+                <option value="11">Extremadura</option>
+                <option value="12">Galicia</option>
+                <option value="13">La Rioja</option>
+                <option value="14">Madrid</option>
+                <option value="15">Murcia</option>
+                <option value="16">Navarra</option>
+                <option value="17">País vasco</option>
+                <option value="18">Ceuta</option>
+                <option value="19">Melilla</option>
+              </select>
+            </p>
+          </div>
+
+          <div>
+            <fieldset id="SecorEconomico">
+              <legend>Sector/es Económicos</legend>
+              <input type="checkbox" value="Alimentacion" name="Alimentacion" /> Alimentación
+              <input type="checkbox"  value="Informática" name="Informática" /> Informática
+              <input type="checkbox" value="Comercio" name="Comercio" /> Comercio
+              <input type="checkbox" value="Construccion" name="Construccion" /> Construcción
+              <input type="checkbox" value="Hosteleria" name="Hosteleria" /> Hostelería
+              <input type="checkbox" value="Automocion" name="Automocion" /> Automoción
+              <input type="checkbox" value="Calzado" name="Calzado" /> Calzado
+              <input type="checkbox" value="Turismo" name="Turismo" /> Turismo
+              <input type="checkbox" value="Agricultura" name="Agricultura" /> Agricultura
+              <input type="checkbox" value="Ganaderia" name="Ganaderia" /> Ganadería
+              <input type="checkbox" value="Otros" name="Otros" /> Otros
+            </fieldset>
+            <img src="" name="img_aficion"/>
+          </div>
+
+          <div>
+            <fieldset id="TipoEmpresa">
+              <legend>Tipo de Empresa</legend>
+              <input type="radio" value="SA" name="empresa"/> S.A.
+              <input type="radio" value="SL" name="empresa"/> S.L.
+              <input type="radio" value="SAL" name="empresa"/> S.A.L.
+              <input type="radio" value="Cooperativa" name="empresa"/> Cooperativa
+              <input type="radio" value="Autonomo" name="empresa"/> Autónomo
+              <input type="radio" value="Otra" name="empresa"/> S.A.L.
+            </fieldset>
+          </div><br>
+
+          <input type="submit" value="Validar" name="validar"/>
+          <input type="reset" value="Limpiar" name="limpiar" />
+
+        </form>
+      </article>
+    </section>
+  </main>
+</body>
